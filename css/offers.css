@@ -1,0 +1,184 @@
+@import url(styles.css);
+@import url(tablet.css);
+@import url(mobile.css);
+
+
+/* CSS Home Offers Section */
+.home__offers{
+    width: 100%;
+}
+
+.home__offers__background{
+    background-image:linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)) ,url(../image/home-banner-about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}   
+
+.home__offer__title{
+    font-size: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* CSS Search */
+
+.form__checkbox{
+    margin-top: 30px;
+}
+
+.list__checkbox{
+    flex-wrap: wrap;
+}
+
+.list__checkbox:last-child{
+    margin-top: 20px;
+}
+
+.form-check-input{
+
+}
+
+.form-check-label{
+    text-transform: capitalize;
+    font-weight: normal;
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.submit__btn{
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* CSS filter */
+
+.offers__list{
+    padding: 50px 0 50px 0;
+}
+#distance, #review{
+    padding-right: 20px;
+}
+
+.form-select-lg{
+    border-radius: 0 !important;
+    margin-right: 20px;
+}
+.form-select-lg option{
+    border-radius: 0 !important;
+}
+
+.filter__btn button{
+    height: 100%;
+    padding: 0 20px;
+    background: var(--bg-linear) !important;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+}
+
+.filter__btn button:hover{
+    opacity: 0.8;
+}
+
+/* CSS List content */
+
+.offers__list__content{
+    padding: 50px 0;
+}
+
+.left__price{
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.left__detail{
+    margin-left: 10px;
+}
+
+.left__stars{
+    color: var(--yellow);
+}
+
+.right__review__title{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.right__review__counts{
+
+}
+
+.right__point{
+    border-radius: 50%;
+    padding: 15px;
+    background: var(--yellow);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.list__offers__detail{
+    margin-top: 20px;
+}
+
+.list__offers__utilities{
+    margin-top: 20px;
+}
+
+.list__offers__utilities img{
+    height: 30px;
+}
+
+.offers__list__btn--booknow{
+    border: none;
+    background-color: var(--dark-violet);
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    margin-top: 50px;
+}
+.offers__list__btn--booknow:hover{
+    opacity:0.9;
+}
+
+/* CSS Responsive */
+
+/* Tablet */
+@media screen and (max-width:991px) {
+    .list__checkbox:last-child{
+        margin-top: 0;
+    }
+    .offers__list__btn--booknow{
+        margin-top: 25px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width:767px) {
+    .form-check-label{
+        font-size: 12px;
+        margin-left: 5px;
+    }
+    .list__item__img img{
+        width: 100%;
+    }
+    .offers__list__btn--booknow{
+        margin-top: 30px;
+    }
+}

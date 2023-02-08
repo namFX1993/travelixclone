@@ -1,0 +1,327 @@
+*{
+    box-sizing: border-box;
+}
+
+header{
+    padding: 40px 0;
+}
+
+.nav__logo a{
+    color: var(--dark-violet);
+}
+
+#menu-close{
+    color: black;
+}
+.login{
+    overflow: hidden !important;
+    width: 100%;
+}
+.container{
+    /* width: 200%; */
+    overflow: hidden;
+    column-gap: 15px;
+}
+.login__page{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    
+    /* left: -100%; */
+}
+.login__page.active{
+    transform: translateX(calc(-100% - 15px));
+}
+.sign__up__page{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+    /* transform: translateX(0); */
+}
+.sign__up__page.active{
+    /* transform: translateX(-100%); */
+    transform: translateX(calc(-100% - 15px));
+}
+
+
+
+/* CSS Left Container */
+
+/* CSS Sign In Form */
+.login__left__container,
+.login__form__container{
+    padding: 50px;
+}
+
+.login__left__container{
+    background: var(--bg-linear);
+    color: white;
+    line-height: 2;
+    /* z-index: 1; */
+}
+
+.left__content--title{
+    font-family: "Beyond The Mountains";
+    font-size: 50px;
+    text-align: center;
+}
+.left__content--detail{
+    text-align: justify;
+}
+
+.login__form__container{
+    border: 1px solid gray;
+    overflow: hidden;
+    column-gap: 50px;
+}
+
+.login__form--title{
+    font-weight: bold;
+}
+/* label.form-label{
+    margin-top: 20px;
+} */
+
+form{
+    margin-top: 30px;
+}
+
+.form-check{
+    padding-left: 0;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.mb-3:nth-child(2),
+.mb-3:nth-child(3){
+    position: relative;
+}
+.mb-3:nth-child(2) span,
+.mb-3:nth-child(3) span{
+    cursor: pointer;
+}
+
+.show__password,
+.show__confirm__password{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.show__password.active,
+.show__confirm__password.active{
+    display: none;
+}
+
+.hide__password,
+.hide__confirm__password{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.hide__password.active,
+.hide__confirm__password.active{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.form-check label{
+    margin-left: 10px;
+}
+#rememberMe{
+    width: 15px;
+    height: 15px;
+}
+
+form button{
+    margin-top: 30px;
+    border-radius: 30px;
+    padding: 5px 25px;
+    background: var(--bg-linear);
+    color: white;
+    border: none;
+    box-shadow: 1px 2px gray;
+    font-size: 20px;
+    transition: all 400ms ease;
+    width: 40%;
+}
+
+form button:hover{
+    scale: 1.2;
+   
+}
+
+/* .forgot__password{
+    text-align: center;
+    margin-top: 30px;
+} */
+
+.sign__in__with--title{
+    margin-top: 30px;
+    text-align: center;
+    position: relative;
+}
+.sign__in__with--title::before{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 38%;
+    background-color: gray;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.sign__in__with--title::after{
+    display: block;
+    content: "";
+    height: 2px;
+    width: 38%;
+    background-color: gray;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.sign__in__with__list{
+    margin-top: 30px;
+}
+
+/* CSS Sign In With */
+.sign__in__with__list i{
+    color: white;
+    vertical-align: middle;
+}
+.sign__in__with a{
+    text-decoration: none;
+}
+.sign__in__with span{
+    font-size: 25px;
+    height: 100%;
+    padding: 5px 10px;
+}
+
+.sign__in__with button{
+    background-color: white;
+    width: 70%;
+    /* padding: 10px 20px; */
+    border: 1px solid var(--gray);
+    border-left: none;
+}
+
+.sign__in__with--facebook span{
+    background-color: blue;
+    
+}
+.sign__in__with--facebook button{
+    color: blue;
+}
+
+.sign__in__with--facebook button:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.sign__in__with--google span{
+    background-color: red;
+}
+.sign__in__with--google button{
+    color: red;
+}
+.sign__in__with--google button:hover{
+    background-color: red;
+    color: white;
+    border: 1px solid red;
+}
+
+.sign__in__with--twitter span{
+    background-color: blue;
+}
+
+.sign__in__with--twitter button{
+    color: blue;
+}
+.sign__in__with--twitter button:hover{
+    background-color: blue;
+    color: white;
+    border: 1px solid blue;
+}
+
+.login__form{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.login__form.active{
+    transform: translateX(calc(-100% - 50px));
+    transition: all 0.6s ease-in-out;
+    /* z-index: 0; */
+}
+
+/* Sign Up */
+.alert__password__invalid,
+.alert__confirm__password__invalid{
+    font-size: 13px;
+    color: red;
+}
+
+/* CSS Forgot Password */
+.forgot__password__form{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.forgot__password__form.active{
+    transform: translateX(calc(-100% - 50px));
+}
+.forgot__password__form.active.active__2{
+    transform: translateX(calc(-200% - 100px));
+}
+
+.send__code,
+.confirm__code{
+    font-size: 16px;
+    width: 50%;
+    margin-top: 10px;
+}
+
+/* Set New Password */
+.new__password__form{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.new__password__form.active{
+    transform: translateX(calc(-200% - 100px));
+}
+
+.new__password__form .mb-3:first-child{
+    position: relative;
+}
+.new__password__form .mb-3:first-child span{
+    cursor: pointer;
+}
+
+@media screen and (max-width:767px) {
+    form button {
+        width: 50%;
+        font-size: 16px;
+    }
+    .sign__in__with--facebook button,
+    .sign__in__with--google button,
+    .sign__in__with--twitter button{
+        width: 100%;
+    }
+    
+    .sign__in__with--title::before{
+        width: 25%;
+    }
+    
+    .sign__in__with--title::after{
+        width: 25%;
+    }
+
+    .forgot__password__form .send__code {
+        width: 100%;
+    }
+
+
+}

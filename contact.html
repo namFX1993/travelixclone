@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/tablet.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="shortcut icon" href="image/logo_title.ico" type="image/x-icon">
+    <link href="//db.onlinewebfonts.com/c/41f5e8ff1d98d490a19c6d48ea7b74b1?family=Beyond+The+Mountains" rel="stylesheet" type="text/css"/>
+    <title>Travelix - N.ToyZ</title>
+</head>
+<body>
+<header class="header">
+    <div class="header__topbar hide-on-mobile">
+        <div class="grid wide">
+            <div class="row d-flex">
+                <div class="col-12 col-md-6 header__topbar__contacts">
+                    <span class="phone__number pe-5">+84 876 38 19 19</span>
+                    <a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f pe-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter pe-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-dribbble pe-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-behance pe-2"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in pe-2"></i></a>
+                </div>
+                <div class="col-12 col-md-6 header__topbar__login d-flex justify-content-end">
+                    <a href="login.html" class="login pe-2">LOGIN</a>
+                    <span>|</span>
+                    <a href="login.html" class="register ps-2">REGISTER</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="header__menu">
+        <div class="header__nav__container">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col-8 col-md-6 col-lg-3 nav__logo">
+                        <a href="index.html">
+                            <div class="header__nav__container--logo d-flex">
+                                <img src="image/logo.webp" alt="">                       
+                                Travelix</div>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 hide-on-tablet_mobile">
+                        <ul class="header__nav__container--list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="offers.html">Offers</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-3 col-md-6 col-lg-3 text-end px-2">
+                        <div class="header__nav__container--search d-flex justify-content-end">
+                            <div class="col-11 d-none d-md-flex justify-content-md-end">
+                                <input type="text" name="Search" class="d-none d-lg-inline-block" id="inputSearch" placeholder="Search...">
+                                <button type="submit" class="header__search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                            </div>  
+                            <div class="col-12 col-md-2 only__tablet--mobile d-lg-none">
+                                <button>
+                                    <i class="fas fa-bars" id="menu__open"></i>
+                                </button>    
+                            </div>
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="header__menu__tablet__mobile d-none">
+        <div class="header__menu__t__m__overlay d-none"></div>
+        <div class="header__menu__t__m__content">
+            <div class="col-11">
+                <ul class="menu__list__t__m">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li> 
+                    <li><a href="login.html">Sign In & Sign Up</a></li>                   
+                    <div class="col-12 d-flex justify-content-md-end mt-4">
+                        <input type="text" name="Search" id="inputSearch__t-m" placeholder="Search...">
+                        <button type="submit" class="header__search__btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                    </div> 
+                    
+                </ul>
+            </div>
+            <div class="col-1">
+                <i class="fas fa-times" id="menu-close"></i>
+            </div>
+           
+            
+        </div>
+    </div>
+    <div class="scroll__top d-none">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+</header>
+<main>
+    <!-- Home Section -->
+    <div class="home__contact">         
+        <div class="home__contact__background"></div>
+        <h1 class="home__contact__title">Contact</h1>
+    </div>
+    <!-- Contact -->
+    <div class="contact">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col-12 col-lg-5"></div>
+                <div class="col-12 col-lg-7 contact__form__body">
+                    <div class="col-12 contact__form__content">  
+                        <div class="row">
+                            <h2 class="col-12 contact__title">Get in touch</h2>
+                            <div class="col-12 col-lg-6">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                            <div class="col-12 col-lg-6">
+                                <label for="inputEmail" class="form-label">Email</label>
+                                <input type="email" class="form-control" id="inputEmail">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputSubject" class="form-label">Subject</label>
+                                <input type="text" class="form-control" id="inputSubject">
+                            </div>
+                            <div class="col-12">
+                                <label for="inputMessage" class="form-label">Message</label>
+                                <textarea class="form-control" id="inputMessage"></textarea>
+                            </div>
+                        </div>
+                       
+                        <div class="col-12 submit__form">
+                            <button type="submit" class="contact__submit">Send Message
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </div>
+
+</main>
+<footer class="footer">
+    <div class="footer__container">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer__about">
+                        <div class="footer__about--logo">
+                            <a href="index.html">
+                                <div>
+                                    <img src="image/logo.webp" alt="">
+                                    Travelix
+                                </div>
+                            </a>
+                        </div>
+                        <div class="footer__about--content">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus quis vu lputate eros, iaculis consequat nisl. Nunc et suscipit urna. Integer eleme ntum orci eu vehicula pretium.
+                        </div>
+                        <div class="footer__about--social">
+                            <a href="#"><i class="fa-brands fa-pinterest pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-dribbble pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-behance pe-2"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in pe-2"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 hidden">
+                    <div class="footer__blogposts">
+                        <div class="footer__blogposts--title">Blog posts</div>
+                        <div class="footer__blogpost--content">
+                            <ul class="blogposts__list">
+                                <li class="blogpost__list--item col-12 d-flex justify-content-center">                                   
+                                    <img src="image/best-tour-1.webp" alt="Related post" width="60" height="60">                                  
+                                    <div class="blogposts__list--item--content">
+                                        <a href="#">Travel with us this year</a>
+                                        <div class="post__time">July 21, 2022</div>
+                                    </div>
+                                    
+                                    
+                                </li>
+                                <li class="blogpost__list--item d-flex justify-content-center mt-3">
+                                    <img src="image/best-tour-1.webp" alt="Related post" width="60" height="60">
+                                    <div class="blogposts__list--item--content">
+                                        <a href="#">Travel with us this year</a>
+                                        <div class="post__time">July 21, 2022</div>
+                                    </div>
+                                </li>
+                                <li class="blogpost__list--item d-flex justify-content-center mt-3">
+                                    <img src="image/best-tour-1.webp" alt="Related post" width="60" height="60">
+                                    <div class="blogposts__list--item--content">
+                                        <a href="#">Travel with us this year</a>
+                                        <div class="post__time">July 21, 2022</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-3 hidden">
+                    <div class="footer__tags">
+                        <div class="footer__tags--title">Tags</div>
+                        <div class="footer__tags--content">
+                            <ul class="footer__tags--list">
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Design</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Fashion</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Music</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Video</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Party</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Photography</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Adventure</a>
+                                </li>
+                                <li class="footer__tags--list--item">
+                                    <a href="#">Travel</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3">
+                    <div class="footer__contact">
+                        <div class="footer__contact--title">Contact info</div>
+                        <div class="footer__contact--content">
+                            <ul>
+                                <li><img src="image/location.svg" alt="" width="20" height="auto"><span>29/26 Nguyen Hoi</span></li>
+                                <li><img src="image/hotline.svg" alt="" width="20" height="auto"><span>+84 876 38 19 19</span></li>
+                                <li><img src="image/mail.svg" alt="" width="20" height="auto"><span>ntoyz@gmail.com</span></li>
+                                <li><img src="image/website.svg" alt="" width="20" height="auto"><span>www.ntoyz.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="absolute__footer">
+        Copyright &copy; 2023 by <a href="#">N.Toyz</a>
+    </div>
+</footer>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/8beac1b35e.js" crossorigin="anonymous"></script>
+</body>
+</html> 

@@ -1,0 +1,972 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family:'Open Sans', sans-serif;
+    box-sizing: border-box;
+    
+}
+.grid{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+   
+}
+
+.grid.wide{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+/* Dat bien mau */
+:root{
+    --bg-btn:linear-gradient(to right, #fa9e1b, #8d4fff, #fa9e1b);
+    --bg-linear:linear-gradient(to right, #fa9e1b, #8d4fff);
+    --dark-violet: #350a4e;
+    --yellow:#fa9e1b;
+    --overlay:linear-gradient(to right, #fa9e1bc7, #8d4fffd9);
+    --gray:#708090;
+    --low-gray:#eef0f2a6;
+}
+
+/* CSS Header topbar */
+.header{
+    transition: all 0.9s ease-in-out;
+}
+.header__topbar{
+    background-color: var(--dark-violet);
+    color: white !important;
+    font-size: 12px;
+    padding: 5px 0px;
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+.header__topbar a{
+    text-decoration: none;
+    color: white ;
+}
+.header__topbar a:hover{
+    color: orange !important;
+}
+.header__topbar__contacts{
+    
+
+}
+
+/* CSS NAV Menu */
+.header__menu{
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    background-color: rgba(54, 19, 84, .6);
+}
+.header__nav__container{
+    padding: 40px 0;
+    padding-top: 60px;
+}
+.header__nav__container .row{
+    align-items: center;
+    justify-content: space-between;
+}
+.nav__logo a{
+    color: white;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    text-decoration: none;
+}
+.header__nav__container--logo img{
+    /* vertical-align: baseline !important; */
+    padding-right: 10px;
+}
+ul.header__nav__container--list{
+    vertical-align: baseline;
+    padding-top: 10px;
+    position: relative;
+    text-align: center;
+}
+.header__nav__container--list li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+.header__nav__container--list a{
+    text-decoration: none;
+    color: white;
+}
+/* Active link when hover and click */
+.header__nav__container--list a.active::after,
+.header__nav__container--list a:hover::after{
+    opacity: 1;
+}
+.header__nav__container--list a::after{
+    content: '';
+    display: block;
+    width: calc(75% + 2px);
+    height: 2px;
+    background:var(--bg-linear);
+    position: absolute;
+    left:-1px;
+    bottom: -8px;
+    opacity: 0;
+    transition: all 400ms ease;
+}
+
+.header__nav__container--list a:hover{
+    color: white;
+}
+
+.only__tablet--mobile button{
+    background: transparent;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+#menu__open{
+    color: white;
+    /* font-size: 20px; */
+    padding: 9px 11px;
+}
+.header__nav__container--search{
+    /* background: white; */
+    color: white;
+    text-align: right;
+
+}
+#inputSearch{
+    border-radius: 10px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+.header__search__btn{
+    border-radius: 10px;
+    padding: 5px 10px;
+    border: 1px solid white;
+    background: transparent;
+    transition: all 400ms ease;
+    color: white;
+}
+.header__search__btn:hover{
+    color: white;
+    background: var(--yellow);
+}
+
+/* CSS Menu for tablet + mobile */
+.header__menu__tablet__mobile{
+    
+}
+.header__menu__t__m__overlay{
+    position: fixed;
+    height: 100vh;
+    width: 100vh;
+    background-color: rgba(0, 0, 0, 0.3) ;
+    z-index: 100;
+}
+.header__menu__t__m__content{
+    padding: 30px 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    right: -320px;
+    top: 0;
+    width: 320px;
+    height: 100%;
+    background: var(--bg-linear);
+    z-index: 100;
+    transition: all 0.7s ease;
+}
+.header__menu__t__m__overlay.open{
+    display: block !important;
+}
+.header__menu__t__m__content.open{
+    right: 0;
+}
+.menu__list__t__m{
+    list-style: none;
+    padding-left: 0;
+}
+.menu__list__t__m li{
+    margin-top: 10px;
+}
+.menu__list__t__m a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Beyond The Mountains';
+    font-size: 16px;
+}
+.menu__list__t__m a:hover{
+    color: var(--yellow);
+}
+
+#inputSearch__t-m{
+    width: 100%;
+    border-radius: 10px;
+    padding: 4px;
+    border: none;
+    outline: none;
+    margin-right: 5px;
+}
+#menu-close{
+    color: white;
+    font-size: 20px;
+}
+/* CSS section Home */
+.home{
+    padding-bottom: 140px;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../image/bg_header.webp);
+    background-repeat: no-repeat;
+}
+
+/* CSS Scroll top */
+.scroll__top{
+    background-color: var(--yellow);
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    position: fixed;
+    bottom: 5%;
+    right: 3%;
+    cursor: pointer;
+    z-index: 99;
+}
+.scroll__top i {
+    color: white;
+    font-size: 25px;
+    /* position: fixed; */
+    margin-left: 50%;
+    margin-top: 25%;
+    transform: translateX(-50%);
+}
+/* CSS H1 */
+.home__container__content h1:first-child{
+    font-size: 150px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 210px;
+}
+.home__container__content h1:last-child{
+    color: white;
+    font-size: 150px;
+    font-family:'Beyond The Mountains';
+    text-align: center;
+}
+
+/* CSS Button background: Explore now + Book now  */
+.home__container__btn,
+.item__btn{
+    display: inline-block;
+    height: 53px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.btn__bgc{
+    z-index: 0;
+    border: none;
+    width: 200%;
+    height: 100%;
+    background: var(--bg-btn);
+    transition: all 400ms linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.home__container__btn a,
+.item__btn a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 53px;
+    padding: 0px 48px 0 48px;
+    white-space: nowrap;
+    position: relative;
+}
+a span{
+    display: inline-block;
+    height: 5.75px;
+    width: 5.67px;
+    border-radius: 50%;
+    background-color: white;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+a span:nth-child(2){
+    opacity: .6;
+}
+a span:last-child{
+    opacity: .3;
+}
+
+
+/* CSS Search Form */
+.search{
+    display: flex;
+    background: var(--bg-linear);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 80px 0;
+}
+/* CSS Tab Sellection */
+.search__container__selection .row{
+    color: black;
+    /* background-color: white; */
+    height: 100px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    /* border-top-left-radius: 94px ;
+    border-top-right-radius: 94px ; */
+    align-items: center;
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.search__tab:first-child{
+    border-top-left-radius: 94px ;
+    padding-left: 7px;
+}
+.search__tab:last-child{
+    border-top-right-radius: 94px ;
+    padding-right: 7px;
+    /* border-left: 1px solid var(--gray); */
+}
+/* .search__tab:nth-child(2),
+.search__tab:nth-child(3),
+.search__tab:nth-child(4),
+.search__tab:nth-child(5)
+{
+    border-left: 1px solid var(--gray);
+} */
+.search__tab{
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    height: 100%;
+    flex-grow: 1;
+    font-size: 14px;
+}
+.search__container__selection img{
+    padding-right: 15px;
+}
+.search__form__submit{
+    padding: 6px 0px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: var(--dark-violet);
+    color: white;
+    text-transform: uppercase;
+    margin-top: 30px;
+    font-weight: 700;
+}
+
+/* CSS Best tours */
+.best__tours {
+    
+}
+.best__tours--title h2{
+    margin-top: 70px;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.best__tours--description{
+    font-size: 25px;
+    font-weight: 300;
+    font-style: italic;
+    color: var(--gray);
+    text-align: center;
+    padding: 0 100px;
+}
+.best__tours--gallery{
+    margin-top: 50px;
+    text-align: center;
+    color: white;
+    padding-bottom: 80px;
+    
+}
+.best__tours__1, .best__tours__2, .best__tours__3{
+    height: 500px;
+}
+.best__tours__1{
+    
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../image/best-tour-1.webp);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.best__tours__2{
+    
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../image/greece.webp);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.best__tours__3{
+   
+    background-size: cover;
+    background-position: center center;
+    background-image: linear-gradient(rgba(64, 6, 97, 0.4), rgba(64, 6, 97, 0.4)), url(../image/scotland.webp);
+    background-repeat: no-repeat;
+    position: relative;
+}
+.date__tour{
+    font-size: 13px;
+    padding: 0px 39px;
+    border-radius: 30px;
+    background-color: var(--yellow);
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: auto;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    line-height: 27px;
+    /* width: 70%; */
+}
+.tour__name{
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: auto;
+    transform: translate(-50%, -50%); 
+}
+.tour__price{
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.tour__rating{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: var(--yellow);
+}
+
+/* CSS Button background */
+.best__tours__item__btn{
+    display: inline-block;
+    height: 40px;
+    position: absolute;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 60px;
+    left: 50%;
+    top: 70%;
+    transform: translateX(-50%);
+}
+.item__btn__bgc{
+    z-index: 0;
+    border: none;
+    width: 200%;
+    height: 100%;
+    background: var(--bg-btn);
+    transition: all 400ms linear;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+.best__tours__item__btn a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 0px 48px 0 48px;
+    white-space: nowrap;
+    position: relative;
+}
+
+/* CSS Package */
+.package{
+    background-size: cover;
+    background-position: center center;
+    background-image: var(--overlay);
+    background-repeat: no-repeat;
+    position: relative;
+    padding-top: 125px;
+    padding-bottom: 116px;
+}
+.package__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.27;
+}
+.package__container{
+    position: relative;
+}
+.package__container__body{
+    padding: 65px 90px;
+    background: white;
+}
+.package__content h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+.package__rating{
+    text-align: center;
+    margin-top: 30px;
+    color: var(--yellow);
+}
+.package__description{
+    margin-top: 30px;
+    padding: 0 50px;
+    line-height: 2.23;
+    font-size: 16px;
+    color: var(--gray);
+    text-align: center;
+}
+/* .item__btn{
+    display: inline-block;
+    height: 40px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+    margin-top: 60px;
+    
+    left: 50%;
+    transform: translateX(-50%);
+}
+.item__btn{
+
+    height: 40px;
+}
+.item__btn a{
+    line-height: 40px;
+} */
+/* CSS Offer */
+.best__offers{
+    margin: 0 auto;
+    background-color: var(--low-gray);
+    padding-bottom: 80px;
+}
+h2.best__offers__title{
+    padding-top: 80px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.offer__content{
+    margin-left: 15px;
+}
+.offer__image{
+    position: relative;
+}
+.offer__badget{
+    background-color: var(--yellow);
+    padding: 5px 20px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: absolute;
+    top:80%;
+    left: 0;
+    transform: translateY(-80%);
+}
+.offer__price{
+    color: var(--yellow);
+    font-size: 40px;
+    font-weight: bold;
+}
+.price__detail,
+.offer__detail{
+    color: var(--gray);
+}
+.offer__rating{
+    color: var(--yellow);
+    
+}
+.offer__detail,
+.offer__utilities{
+    margin-top: 10px;
+    font-size: 14px;
+}
+.offer__utilities img{
+    padding-right: 10px;
+    height: 100%;
+    width: auto;
+}
+.offer__image img{
+    width: 100%;
+    height: 100%;
+}
+.read-more{
+    margin-top: 30px;
+    text-transform: uppercase;
+}
+.read-more a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.read-more a:hover{
+    color: var(--yellow);
+}
+
+/* CSS Customer Reivew */
+.customer__review{
+    padding-bottom: 80px;
+}
+h2.customer__review__title{
+    padding:80px 0 60px 0;
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+}
+.reviewer__item{
+    position: relative;
+    padding-top: 36px;
+}
+.review__badget {
+    display: flex;
+    background-color: var(--yellow);
+    border-radius: 100%;
+    width: 72px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    position:absolute;
+    top:0;
+    left: 41px;
+}
+.review__customer{
+    width: 140px;
+    height: 50px;
+    background-color: white;
+    text-align: left;
+    position: absolute;
+    top: 45%;
+    left: 25%;
+    transform: translateX(-45%);
+    z-index: 2;
+}
+.customer__name{
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-left: 15px;
+}
+.customer__date{
+    padding-left: 15px;
+}
+.review__detail{
+    height: 50%;
+    color: white;
+    background-color: rgba(54, 19, 84, .5);
+    position: absolute;
+    bottom: 0;
+    left:0;
+    /* z-index: 1; */
+}
+.review__detail--title{
+    padding: 80px 0px 0px 30px;
+    font-size: 20px;
+}
+.review__description{
+    padding: 0px 30px 0 30px;
+    margin-top: 10px;
+    
+}
+/* CSS Line */
+.line{
+    width: 100%;
+    height: 2px;
+    background: var(--overlay);
+}
+
+/* CSS Trending */
+.trending{
+    padding-bottom: 80px;
+}
+h2.trending__title{
+    font-size: 40px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 80px 0 80px 0;
+}
+.trending__item--title{
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: bold;
+}
+.trending__item--price{
+    color: var(--yellow);
+    margin-top: 5px;
+}
+.trending__item--location{
+    text-transform: uppercase;
+    margin-top: 5px;
+}
+.trending__item img{
+    width: 90%;
+    height: auto;
+}
+/* CSS Contact form */
+.contact{
+    display: flex;
+    background-image: url(../image/contact.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding-bottom: 50px;
+}
+.contact__form__body{
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background: var(--bg-linear);
+}
+.contact__form__content{
+    margin: 0 auto;
+}
+.contact__title{
+    font-size: 40px;
+    
+}
+.contact .form-label{
+    margin-top: 20px;
+}
+#inputName, #inputEmail, #inputSubject, #inputMessage{
+    border-radius: 0;
+    border: none;
+    background-color: transparent;
+    outline: transparent;
+    color: white;
+    border-bottom: 2px solid #ffff;
+}
+.submit__form{
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+.contact__title{
+    padding-top: 80px;
+    font-weight: bold;
+    text-transform: uppercase;
+    
+    padding-bottom: 30px;
+}
+.contact__submit{
+    border: none;
+    border-radius: 30px;
+    width: 35%;
+    height: 50px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: var(--dark-violet);
+}
+/* CSS Footer */
+.footer{
+    padding: 80px 0 80px 0;
+    color: white;
+    background-color: var(--dark-violet);
+}
+/* Footer About */
+.footer__about--logo a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+}
+/* .footer__about--logo img{
+    vertical-align: baseline !important ;
+} */
+.footer__about--content{
+    margin-top: 20px;
+}
+.footer__about--social{
+    margin-top: 20px;
+}
+.footer__about--social a{
+    color: white;
+}
+.footer__about--social a:hover{
+    color: var(--yellow);
+}
+/* Footer blog posts */
+.footer__blogposts--title{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+ul.blogposts__list{
+    margin-top: 40px;
+    list-style: none;
+    padding-left: 0;
+}
+.blogposts__list--item--content{
+    margin-left: 20px;
+}
+.blogposts__list a{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.blogposts__list a:hover{
+    color: var(--yellow);
+}
+.post__time{
+    color: var(--yellow);
+    font-size: 14px;
+}
+
+/* Tags */
+.footer__tags--title{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+.footer__tags--content{
+    margin-top: 40px;
+}
+ul.footer__tags--list{
+    list-style: none;
+    padding-left: 0;
+}
+.footer__tags--content ul li{
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 30px;
+}
+.footer__tags--content a{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid var(--yellow);
+}
+.footer__tags--content a:hover{
+    background-color: var(--yellow);
+    color: white;
+}
+/* Footer Contact */
+.footer__contact--title{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.footer__contact--content{
+    margin-top: 20px;
+    font-size: 14px;
+}
+.footer__contact--content ul{
+    list-style: none;
+    padding-left: 0;
+}
+.footer__contact--content ul li{
+    margin-top: 20px;
+}
+.footer__contact--content ul li span{
+    margin-left: 20px;
+}
+.absolute__footer{
+    margin-top: 50px;
+    text-align: center;
+}
+.absolute__footer a{
+    color: var(--yellow);
+    text-decoration: none;
+}
+
+/* Active search tab when hover or click */
+.search__tab.active{
+    background-color: var(--yellow);
+    color: white;
+    height: 100%;
+    align-items: center;
+    transition: all 500ms ease;
+}
+.search__tab:hover{
+    background-color: var(--yellow);
+    color: white;
+    height: 100%;
+    align-items: center;
+    transition: all 500ms ease;
+}
+.search__tab:hover img,
+.search__tab.active img {
+    filter: brightness(200%) grayscale(100%);
+}
+
+
+/* Active when hover button have linear gradient color background */
+.home__container__btn:hover .btn__bgc,
+.item__btn:hover .btn__bgc,
+.best__tours__item__btn:hover .item__btn__bgc{
+    left: -100%; 
+}
+
+/* Hide input header search */
+#inputSearch.hide{
+    display:none ;
+}
+
+.header__topbar.hide{
+    display: none;
+}
+.header .scroll{
+    position: fixed;
+    height: 100px;
+    animation: toTop 1s ease forwards;
+    z-index: 99;
+}
+.header .scroll .header__nav__container {
+    padding: 20px 0;
+}

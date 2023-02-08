@@ -1,0 +1,109 @@
+@media screen and (max-width: 991px) {
+    .wide{
+        width: 720px;
+    }
+
+    /* CSS Header */
+    /* .header__nav__container{
+        padding: 10px 0 10px 0;
+    } */
+    /* CSS Search section */
+    .search__container__selection .row{
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 18px;
+        vertical-align: middle;
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 720px;
+        position: relative;
+        background-color: transparent;
+    }
+    .search__tab:first-child{
+        border-top-left-radius: 0px ;
+        padding-left: 7px;
+    }
+    .search__tab:last-child{
+        border-top-right-radius: 0px ;
+        padding-right: 7px;
+        /* border-left: 1px solid var(--gray); */
+    }
+    /* .search__tab:nth-child(2),
+    .search__tab:nth-child(3),
+    .search__tab:nth-child(4),
+    .search__tab:nth-child(5)
+    {
+        border-left: 1px solid var(--gray);
+    } */
+    .search__tab{
+        padding: 20px 0 20px 0;
+        align-items: center;
+        background-color: white;
+        margin: 5px;
+        height: 50px;
+        width: 47%;
+    }
+    .search img{
+        width: auto;
+        height:auto;
+    }
+    .search__form{
+        margin-top: 150px;
+    }
+    .search__form__submit{
+        margin-top: 36px;
+    }
+    /* CSS Best tours section  */
+
+    /* CSS Package Section */
+    .package__description{
+        padding: 0 50px;
+    }
+    .hidden{
+        display: none;
+    }
+
+    /* CSS Best Offers  */
+    .offer__utilities,
+    .offer__detail{
+        font-size: 16px;
+    }
+    .read-more{
+        margin-top: 100px;
+        font-size: 18px;
+    }
+
+    /* CSS Review */
+    h2.customer__review__title{
+        font-size: 40px;
+        padding: 50px 0 30px 0;
+    }
+     /* CSS Trending */
+     h2.trending__title{
+        font-size: 40px;
+     }
+     .trending__item--price,
+     .trending__item--location{
+         margin-top: 0;
+     }
+    .trending__item img{
+         height: 95%;
+         width: auto;
+     }
+
+     /*  */
+
+     /* CSS Active */
+     .search__tab.active{
+        background-color: var(--yellow);
+        color: white;
+        height: 50px;
+        align-items: center;
+        border: 1px solid white;
+    }
+
+    /* CSS Hide on tablet + mobile */
+    .hide-on-tablet_mobile{
+        display: none;
+    }
+}

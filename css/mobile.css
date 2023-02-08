@@ -1,0 +1,120 @@
+@media screen and (max-width: 767px) {
+    .grid{
+        width: 95%;
+    }
+    .wide{
+        max-width: 768px !important;
+    }
+
+    /* CSS Header */
+    .header__nav__container{
+        padding: 10px 0 10px 0;
+    }
+    .header .scroll {
+        height: unset;
+    }
+    .header .scroll .header__nav__container {
+        padding: 10px 0 10px 0;
+    }
+    .nav__logo{
+        align-items: center;
+    }
+    .nav__logo a{
+        font-size: 25px;
+        align-self: center;
+    }
+    /* CSS Home section */
+    .home__container__content h1{
+        font-size: 50px !important;
+    }
+    .search__container__selection .row{
+        width: 100%;
+    }
+    .search__form{
+        margin-top: 300px;
+    }
+    .search__tab{
+        padding: 20px 0 20px 0;
+        align-items: center;
+        background-color: white;
+        margin: 0 auto;
+        margin-bottom: 7px;
+        height: 50px;
+        width: 100%;
+    }
+    .row{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* CSS Best tours */
+    .best__tours--title h2{
+        font-size: 30px;
+    }
+    h3.tour__name{
+        font-size: 39px;
+    }
+    .best__tours--description{
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    /* CSS Package */
+    .package__container{
+        padding: 0 15px;
+    }
+    .package__container__body{
+        padding: 65px 20px;
+        
+    }
+    .package__content h2{
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+    .package__rating{
+        margin-top: 10px;
+    }
+    .package__description{
+        margin-top: 10px;
+        padding: 0 20px;
+        font-size: 13px;
+    }
+    /* CSS Best Offers  */
+    h2.best__offers__title{
+        font-size:20px;
+    }
+    .offer__content{
+        margin-top: 10px;
+    }
+    .read-more{
+        margin-top: 30px;
+        font-size: 18px;
+    }
+
+    /* CSS Review */
+    h2.customer__review__title{
+        font-size: 20px;
+    }
+
+    /* CSS Trending */
+    h2.trending__title{
+        font-size: 20px;
+    }
+    .trending__item img{
+        height: auto;
+        width: 100%;
+    }
+
+    /* CSS Contact */
+    .contact__title{
+        font-size: 20px;
+    }
+    .contact__submit{
+        width: 50%;
+    }
+
+    /* CSS Hide on tablet + mobile */
+    .hide-on-mobile{
+        display: none;
+    }
+}
